@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+} 
+
+body {
+    /* background-image: url("https://armageddonandbeyond.files.wordpress.com/2018/04/652cfe34-952a-48a7-a9e1-efe828c59b24.jpeg?w=829");
+    background-image: url("https://images6.alphacoders.com/714/714695.jpg"); */
+    background-image: url("https://media.giphy.com/media/1rNWZu4QQqCUaq434T/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.jumbotron {
+    margin-top: 8em;
+    height: 35em;
+    background-color: rgba(19, 18, 18, 0.808);
+    /* Experimental Feature must be turned on in chrome://flags/ 
+        -->Experimental Web Platform Features */
+    backdrop-filter: blur(5px);   
+    -webkit-backdrop-filter: blur(5px); 
+}
+
