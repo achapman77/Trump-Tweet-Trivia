@@ -1,22 +1,40 @@
 body, html {
     height: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 } 
 
 body {
-    /* background-image: url("https://armageddonandbeyond.files.wordpress.com/2018/04/652cfe34-952a-48a7-a9e1-efe828c59b24.jpeg?w=829");
-    background-image: url("https://images6.alphacoders.com/714/714695.jpg"); */
+    /* "https://us.123rf.com/450wm/leirbagarc/leirbagarc1703/leirbagarc170300007/73736576-trump-illustration-in-american-flag.jpg?ver=6" */
+    
+    /* background-image: url("https://armageddonandbeyond.files.wordpress.com/2018/04/652cfe34-952a-48a7-a9e1-efe828c59b24.jpeg?w=829"); */
+    /* background-image: url("https://images6.alphacoders.com/714/714695.jpg");  */
     background-image: url("https://media.giphy.com/media/1rNWZu4QQqCUaq434T/giphy.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center
 }
 
-.jumbotron {
-    margin-top: 8em;
-    height: 35em;
+h1 {
+    border-bottom: 1px solid whitesmoke;
+    font-size: 3.5em;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue
+}
+
+#game-jumbo {
+    /* margin-top: 8em; */
+    /* height: 35em; */
     background-color: rgba(19, 18, 18, 0.808);
     /* Experimental Feature must be turned on in chrome://flags/ 
         -->Experimental Web Platform Features */
@@ -24,3 +42,68 @@ body {
     -webkit-backdrop-filter: blur(5px); 
 }
 
+#start-button {
+    margin-top: 1em;
+    /* height: 3em; */
+    font-weight: 900;
+    font-size: 4em;
+    letter-spacing: 1em;
+    text-align: center;
+    padding-left: 0.75em;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.daytondailynews.com/rf/image_large/Pub/p8/CmgSharedContent/2017/06/14/Videos/4082103.vpx.jpg");
+    /* background-image: url("https://www.daytondailynews.com/rf/image_large/Pub/p8/CmgSharedContent/2017/06/14/Videos/4082103.vpx.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: solid 0.5px whitesmoke;
+
+}
+
+#start-button:hover {
+    cursor:pointer;
+    
+    animation-name: growButton;
+    animation-duration: 20s;
+    /* border: solid 5px red;
+    color: red; */
+}
+@keyframes growButton {
+    0% {}
+    1% {transform: scale(1.1, 1.1);}
+    100% {transform: scale(1, 1);}
+}
+
+#scoreboard {
+    margin:1.5em 0;
+}
+
+#tweet-board {
+    /* display:flex; */
+    min-height: 20em;
+    background-color: white;
+    color: black;
+    margin-bottom: 1.5em;
+    padding: 0.75em;
+    
+}
+
+#image-container {
+    width:20em;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+#giph {
+    /* display: flex; */
+    max-width: 15em;
+    max-height: 15em;
+}
+
+/* .img-col {
+    display: flex;
+    
+} */
