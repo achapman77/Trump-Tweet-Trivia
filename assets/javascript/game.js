@@ -129,7 +129,7 @@ $(function() {
             tweet:"If Obama resigns from office NOW, thereby doing a great service to the country--I will give him free lifetime golf at any one of my courses!", 
             answer:true, 
             actual:"Nope!  It was Trump...",
-            giph: "https://media.giphy.com/media/9WPEobSqkFTqw/giphy.gif"
+            giph: "https://media.giphy.com/media/pPhyAv5t9V8djyRFJH/giphy.gif"
         },
         {
             tweet:"Yes I am personally rich and I can buy furs and houses for my family.", 
