@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Practice HTML</title>
+        <title>Trump Tweet Trivia</title>
+        <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSclrjfem8ThLbwdTpkiX4_3BTqFNtMro5_VQuyJW8cgSsojJsz2Q">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
         <!-- Additional Style Sheets -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -12,11 +13,11 @@
     <body>
         <div class="container">
             
-            <div id="game-jumbo" class="jumbotron">
+            <div id="game-jumbo" class="jumbotron" >
                 <div class="row">
                     <div class="col-md-8 offset-2">
                         <h1><span class="red">Trump</span> Tweet <span class="blue">Trivia:</span></h1>
-                        <h3>Did the Tweeter in Chief...Tweet The Following?</h3>
+                        <h3 id="question">Did the Tweeter in Chief...Tweet The Following?</h3>
                     </div>
                 </div>
                 <!-- Start Button -->
@@ -26,17 +27,20 @@
                     </div> -->
                 <!-- Score & Timer -->
                 <div id="scoreboard" class="row">
-                    <div class="col-md-6 offset-2">
-                        <h3 id="score"></h3>
-                        <h3 id="incorrect"></h3>
-                        <h3 id="unanswered"></h3>
+                    <div class="col-md-4 offset-2">
+                        <div id="timer-box">
+                            <h3><span id="timer">15</span>  seconds!</h3>
+                        </div>
                     </div>
                     
-                    <div class="col-md-3">
-                        <h3 id="timer"></h3>
-                        
+                    <div class="col-md-4">
+                        <h3><span id="score"></span>   Correct</h3>
+                        <div id="results">
+                            <h3><span id="incorrect"></span>   Incorrect</h3>
+                            <h3><span id="unanswered"></span>   UnAnswered</h3>
+                        </div>
                     </div>
-                </div>
+                </div> <!--scoreboard-->
                 
                 <!-- Start Button -->
                 <div class="row">

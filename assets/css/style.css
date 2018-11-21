@@ -36,14 +36,17 @@ h1 {
     /* margin-top: 8em; */
     /* height: 35em; */
     background-color: rgba(19, 18, 18, 0.808);
+    /* background-color: rgba(124, 3, 3, 0.726); */
+    /* background-color: rgba(5, 27, 150, 0.651); */
     /* Experimental Feature must be turned on in chrome://flags/ 
         -->Experimental Web Platform Features */
     backdrop-filter: blur(5px);   
-    -webkit-backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
+    height: 100%; 
 }
 
 #start-button {
-    margin-top: 1em;
+    margin-top: 0.5em;
     /* height: 3em; */
     font-weight: 900;
     font-size: 4em;
@@ -76,7 +79,7 @@ h1 {
 }
 
 #scoreboard {
-    margin:1.5em 0;
+    /* margin:1.5em 0; */
 }
 
 #tweet-board {
@@ -103,7 +106,22 @@ h1 {
     max-height: 15em;
 }
 
-/* .img-col {
+#timer-box{
     display: flex;
-    
-} */
+    vertical-align: text-top;
+}
+
+#timer,
+#score,
+#incorrect,
+#unanswered {
+    font-size: 2.5em;
+}
+
+#incorrect {
+    color: red;
+}
+
+#unanswered {
+    color: blue;
+}
